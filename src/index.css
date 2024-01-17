@@ -1,0 +1,60 @@
+
+
+css
+/* App.css */
+
+/* General styles */
+body {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.name {
+  margin: 0;
+}
+
+/* Body styles */
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #444;
+}
+
+.content {
+  padding: 20px 0;
+}
+
