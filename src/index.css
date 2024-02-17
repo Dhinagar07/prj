@@ -1,60 +1,13 @@
-
-
-css
-/* App.css */
-
-/* General styles */
 body {
-  background-color: #222; /* Dark background */
-  color: #fff; /* White text */
-  font-family: Arial, sans-serif;
-}
-
-.app {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Header styles */
-.header {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.profile-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.name {
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Body styles */
-.body {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-
-.tabs {
-  display: flex;
-}
-
-.tab {
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tab.active {
-  background-color: #444;
-}
-
-.content {
-  padding: 20px 0;
-}
-

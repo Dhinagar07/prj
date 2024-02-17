@@ -1,119 +1,33 @@
-/* App.css */
-
-body {
-  margin: 0;
-  background-color: blueviolet;
+.lyt{
   overflow: hidden;
-}
-
-.app {
-  height: 100vh;
-  width: 100vw;
-  background-color: red;
-}
-
-.head {
- background-color: rgb(116, 116, 239);
-  width: 100%;
-  height: 20%;
-  position: relative;
-
   
 }
-.head h1{
-  text-align: center;
-  ;
-  
-}
-.pimg{
-  background-color: burlywood;
-  height: 100%;
-  width: 12%;
-  border-radius: 50%;
-  margin-left: 9%;
-  margin-top: 4%;
-  z-index: 200;
-  position: absolute;
-
-}
-.img{
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-
-}
-.cover{
-  width: 100%;
-  height: 100%;
-}
-
-.main {
-  display: flex;
-  width: 100%;
-  height: 80%;
-  background-color: white;
-}
-
-
-.sidebar {
-  background-color: white;
-  padding: 5px;
-  width: 5%;
-  height: 100%;
+.side{
+  color: azure;
   position: fixed;
-  list-style-type: none;
-  overflow-y: hidden;
+  
+  
 }
-.contacts{
-  margin-top: 110%;
+.header{
+  padding: 0;
+  background-color: #000;
+  position: absolute;
+  margin: 0;
+  width: 94.5%;
+  height: 1;
+  
+  
 }
-
-.content {
-  background-color: #fff;
-  margin-top: 0;
-  margin-left: 5%;
-  flex: 4;
-  width: 90%;
-  overflow: auto;
-}
-
-.content li{
-  height: 100%;
-  overflow: auto;
-}
-
-.con{
-  height: 70%;
-  width: 40%;
-  margin-top: 6%;
-  margin-left: 4%;
-  background-color: white;
+.avatar{
+  background-color: aqua;
   color: blue;
-  float: left;
-  border-radius: 2%;
-  border: solid black;
-  padding: 1%;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  align-items: center;
-  box-shadow: 1 1 100% rgb(54, 51, 51);
-  
-
-}
-.con:hover{
-  background-color: #0463FA;
-  color: #fff;
-  transition: 1s;
+  bottom: -40%;
+  left: 9%;
   z-index: 20;
+  position: relative;
 }
-.icon{
-  color: black;
-  margin-top: 30%;
-  font-size: x-large;
-
+.content{
+  margin-top: 8%;  
+  width: 100%;
   
-
 }
-
-/* Rest of your styling for .pimg, .contacts, .icon, .con, etc. */
