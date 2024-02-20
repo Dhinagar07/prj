@@ -27,7 +27,7 @@ const Nav = () => {
   };
   const loc=useLocation();
   return (
-    <Sider className='side' width={200} theme='dark' collapsible collapsed={col} collapsedWidth='50' onCollapse={Toggle}>
+    <Sider  style={{position:'fixed' }} className='side' width={200} theme='dark' collapsible collapsed={col} collapsedWidth='50' onCollapse={Toggle}>
       <Menu theme='dark' mode='vertical' defaultSelectedKeys={[loc.pathname]} className='menu' width={150}>
         <Menu.Item key='/' icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
@@ -52,25 +52,21 @@ const Nav = () => {
 const MyLayout = () => {
   return (
     <Router>
-    <Layout style={{ minHeight: '100vh' }}  className='lyt'>
-    <Nav />
-      <Layout className='lyt'>
-      <Header className='header'>
-         <Avatar size={64} className='avatar' icon={<UserOutlined />} />
-       </Header>        
-       <Content className='content'>
           
+        <Layout style={{ minHeight: '100vh' }} className='lyt'>
+        <Nav/>
+        <Layout style={{ marginLeft: 80 }}> {/* Adjust margin based on the width of the Nav */}
+          <Content className='content'>
             <Routes>
-              <Route path='/' element={<Home/>} />
-              <Route path='/about' element={<About/>} />
-              <Route path='/skill' element={<Skill/>} />
-              <Route path='/edu' element={<Edu/>} />
-              <Route path='/contact' element={<Contact/>} />
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/skill' element={<Skill />} />
+              <Route path='/edu' element={<Edu />} />
+              <Route path='/contact' element={<Contact />} />
             </Routes>
-          
-        </Content>
+          </Content>
+        </Layout>
       </Layout>
-    </Layout>
     </Router>
   );
 };

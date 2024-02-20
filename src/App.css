@@ -1,12 +1,8 @@
-.lyt{
-  overflow: hidden;
-  
-}
 .side{
   color: azure;
-  position: fixed;
   
   
+    
 }
 .header{
   padding: 0;
@@ -27,7 +23,6 @@
   position: relative;
 }
 .content{
-  margin-top: 8%;  
   width: 100%;
   
 }
